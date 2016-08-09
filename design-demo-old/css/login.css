@@ -1,0 +1,99 @@
+﻿@charset "utf-8";
+@import url("reset.css");
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+
+
+
+
+body {
+
+		background:url(../images/loginbk.jpg) bottom center  #f3f3f3 fixed no-repeat;
+		font:12px 'Open Sans', sans-serif;
+		font-size: 80%;
+		color:#333;
+		margin:0;
+		width:100%; height:auto;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+}
+
+
+a{color:#3174b8;}
+a:hover{color:#999;}
+
+
+#loginbox {
+  width: 446px;
+  height:600px;
+  position: absolute;
+  margin: -300px 0px 0px -250px;
+  top: 50%;
+  left: 50%;
+  overflow: auto;
+  background:url(../images/boxbk.png) 50% 20% no-repeat;
+}
+#logintxt { padding:60px 0 0 40px;}
+#logintxt li { width:270px; height:35px; margin:8px 0; list-style-type:none;}
+#logintxt input {
+	background:transparent;
+	border:0;
+	height:33px;
+	width:210px;
+	padding-left:60px;
+	text-shadow:1px 1px 0 #F0F0F0;
+	color:#666;
+	font:12px 'Open Sans', sans-serif;
+	}
+#logintxt .id { background:url(../images/input_id.png) no-repeat;}
+#logintxt .pw { background:url(../images/input_pw.png) no-repeat;}
+#logintxt .code { background:url(../images/input_code.png) no-repeat;}	
+#logintxt #captcha { padding-top:10px; }
+.code_img {  float:left;}
+.fixbtn { padding:20px; float:right;}
+
+#powerby { padding-top:100px; width:100%; color:#999; }
+
+
+/* table */
+
+._table {display:table;	}
+._tr {display: table-row;	}
+._td {display: table-cell;	}
+.intxt {
+	border-bottom: dotted 1px #cccccc;
+	padding:2px ;
+	font-size:12px;
+	}
+
+
+
+
+/* buttons */
+.btn {
+	font:12px 'Open Sans', sans-serif;
+	color:#fff;
+	background:#468bd1;
+	border-bottom:: 1px solid #4180c1;
+	padding: 5px 30px;
+	cursor: pointer;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	text-transform: uppercase; /* Uppercase text */
+	text-decoration:none; /* class - link Remove baseline */
+	}
+	.btn:hover {
+	background:#999;
+	color:#fff;
+}
+
+
+

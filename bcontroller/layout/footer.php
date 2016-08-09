@@ -1,0 +1,1 @@
+<div id="footer"><a href="http://www.taiwan-cloud.com">台灣雲端</a> &copy; 2013 All Rights Reserved.<p class="footer"><a href="http://www.taiwan-cloud.com"><b> </b></a></p></div>

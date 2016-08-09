@@ -1,0 +1,495 @@
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}	
+/** {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}								
+*/
+
+
+article, aside, figure, footer, header, nav, section, details, summary {display: block;}
+
+
+
+:focus {outline: 0;}
+img{border:none;height: auto; max-width: 100%;}
+
+
+/*html {overflow-y: scroll;}*/
+body {font-size: 0.8rem;}
+
+ul li {
+    list-style:none;
+}
+
+blockquote, q {quotes: none;}
+
+blockquote:before, 
+blockquote:after, 
+q:before, 
+q:after {content: ''; content: none;}
+
+a {margin: 0; padding: 0; vertical-align: baseline; background: transparent;-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;text-decoration:none;}
+
+
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {text-decoration: line-through;}
+
+abbr[title], dfn[title] {border-bottom: 1px dotted #000; cursor: help;}
+
+
+table {border-collapse: collapse; border-spacing: 0;}
+th {font-weight: bold; vertical-align: bottom;}
+td {font-weight: normal; vertical-align: top;}
+
+hr {display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0;}
+
+input, select {vertical-align: middle;}
+
+pre {
+    white-space: pre; /* CSS2 */
+    white-space: pre-wrap; /* CSS 2.1 */
+    white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */
+    word-wrap: break-word; /* IE */
+}
+
+input[type="radio"] {vertical-align: text-bottom;}
+input[type="checkbox"] {vertical-align: bottom;}
+.ie7 input[type="checkbox"] {vertical-align: baseline;}
+.ie6 input {vertical-align: text-bottom;}
+
+select, input, textarea {font: 99% sans-serif;}
+
+table {font-size: inherit; font: 100%;}
+
+small {font-size: 85%;}
+
+strong {font-weight: bold;}
+
+td, td img {vertical-align: top;} 
+
+/* Make sure sup and sub don't screw with your line-heights
+	gist.github.com/413930 */
+sub, sup {font-size: 75%; line-height: 0; position: relative;}
+sup {top: -0.5em;}
+sub {bottom: -0.25em;}
+
+
+pre, code, kbd, samp {font-family: monospace, sans-serif;}
+
+
+.clickable,
+input[type="checkbox"] + label, 
+input[type="radio"] + label, 
+input[type=button], 
+input[type=submit], 
+input[type=file], 
+input[type="radio"],
+input[type="checkbox"],
+button {cursor: pointer;}
+
+
+button, input, select, textarea {margin: 0;}
+textarea {
+    resize: none;
+}
+
+
+button,
+input[type=button] {width: auto; overflow: visible;}
+ 
+
+.ie7 img {-ms-interpolation-mode: bicubic;}
+
+
+
+/* ClearFix
+=============================================================================================== */
+
+.clearfix {
+  *zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/* Media - Fluid Images - Video
+============================================================================================== */
+
+figure {
+  margin: 0;
+}
+
+img,
+object,
+embed,
+video {
+  _width: 100%;
+  max-width: 100%;
+}
+
+/* Fluid images */
+
+img {
+  height: auto;
+  vertical-align: middle;
+  border: 0;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+  -ms-interpolation-mode: bicubic;
+}
+
+/* Correct IE9 overflow */
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Avoid Google maps broken with max-width 100% */
+
+img[src*="maps.gstatic.com"],
+img[src*="googleapis.com"] {
+  max-width: none;
+}
+
+/* Links (No outline borders)
+============================================================================================== */
+
+a:hover,
+a:active {
+  outline: 0;
+}
+
+/* Responsive Navigation Basic Style
+===============================================================================================*/
+
+#menu {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  #menu {
+    display: block;
+    padding: 5px;
+    font-size: 1.35em;
+    text-align: right;
+    cursor: pointer;
+    background: #dddddd;
+  }
+  #menu span {
+    margin-right: 10px;
+  }
+  #nav {
+    display: none;
+  }
+  #nav ul {
+    padding: 2%;
+    margin: 0 auto;
+  }
+  #nav li {
+    display: block;
+    width: 100%;
+  }
+}
+
+/* Grid Columns
+================================================================================================*/
+
+/*We strong recommend use the container tag one time only, just to center your grids on the page*/
+
+.container {
+  padding-right: 20px;
+  padding-left: 20px;
+  *zoom: 1;
+}
+
+.container:before,
+.container:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.container:after {
+  clear: both;
+}
+
+/* Fluid Default grid for 1024px screen resolution, grid based for 940px*/
+
+#wrapper {
+  width: 100%;
+  *zoom: 1;
+}
+
+#wrapper:before,
+#wrapper:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+#wrapper:after {
+  clear: both;
+}
+
+#wrapper [class*="col"] {
+  float: left;
+  margin-left: 2.127659574468085%;
+  *margin-left: 2.074468085106383%;
+}
+
+#wrapper [class*="col"]:first-child {
+  margin-left: 0;
+}
+
+#wrapper .col12 {
+  width: 100%;
+  *width: 99.94680851063829%;
+}
+
+#wrapper .col11 {
+  width: 91.48936170212765%;
+  *width: 91.43617021276594%;
+}
+
+#wrapper .col10 {
+  width: 82.97872340425532%;
+  *width: 82.92553191489361%;
+}
+
+#wrapper .col9 {
+  width: 74.46808510638297%;
+  *width: 74.41489361702126%;
+}
+
+#wrapper .col8 {
+  width: 65.95744680851064%;
+  *width: 65.90425531914893%;
+}
+
+#wrapper .col7 {
+  width: 57.44680851063829%;
+  *width: 57.39361702127659%;
+}
+
+#wrapper .col6 {
+  width: 48.93617021276595%;
+  *width: 48.88297872340425%;
+}
+
+#wrapper .col5 {
+  width: 40.42553191489362%;
+  *width: 40.37234042553192%;
+}
+
+#wrapper .col4 {
+  width: 31.914893617021278%;
+  *width: 31.861702127659576%;
+}
+
+#wrapper .col3 {
+  width: 23.404255319148934%;
+  *width: 23.351063829787233%;
+}
+
+#wrapper .col2 {
+  width: 14.893617021276595%;
+  *width: 14.840425531914894%;
+}
+
+#wrapper .col1 {
+  width: 6.382978723404255%;
+  *width: 6.329787234042553%;
+}
+
+/* Fluid grid to 1280px screen resolution, grid based for 1120px*/
+
+@media (min-width: 1200px) {
+  #wrapper {
+    width: 100%;
+    *zoom: 1;
+  }
+  #wrapper:before,
+  #wrapper:after {
+    display: table;
+    line-height: 0;
+    content: "";
+  }
+  #wrapper:after {
+    clear: both;
+  }
+  #wrapper [class*="col"] {
+    float: left;
+    margin-left: 1.694915254237288%;
+    *margin-left: 1.641723764875586%;
+  }
+  #wrapper [class*="col"]:first-child {
+    margin-left: 0;
+  }
+  #wrapper .col12 {
+    width: 100%;
+    *width: 99.94680851063829%;
+  }
+  #wrapper .col11 {
+    width: 91.52542372881356%;
+    *width: 91.47223223945186%;
+  }
+  #wrapper .col10 {
+    width: 83.0508474576271%;
+    *width: 82.99765596826539%;
+  }
+  #wrapper .col9 {
+    width: 74.57627118644066%;
+    *width: 74.52307969707896%;
+  }
+  #wrapper .col8 {
+    width: 66.10169491525423%;
+    *width: 66.04850342589252%;
+  }
+  #wrapper .col7 {
+    width: 57.6271186440678%;
+    *width: 57.5739271547061%;
+  }
+  #wrapper .col6 {
+    width: 49.152542372881356%;
+    *width: 49.099350883519655%;
+  }
+  #wrapper .col5 {
+    width: 40.677966101694906%;
+    *width: 40.624774612333205%;
+  }
+  #wrapper .col4 {
+    width: 32.20338983050847%;
+    *width: 32.15019834114677%;
+  }
+  #wrapper .col3 {
+    width: 23.728813559322035%;
+    *width: 23.675622069960333%;
+  }
+  #wrapper .col2 {
+    width: 15.254237288135592%;
+    *width: 15.20104579877389%;
+  }
+  #wrapper .col1 {
+    width: 6.779661016949152%;
+    *width: 6.72646952758745%;
+  }
+}
+
+/* General small screen Mobile down size from 768px, display all columns in block
+============================================================================================== */
+
+@media handheld, only screen and (max-width: 768px) {
+  body {
+    font-size: 1.0;
+    -webkit-text-size-adjust: none;
+        -ms-text-size-adjust: none;
+  }
+  .container {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  #wrapper {
+    width: 100%;
+  }
+  [class*="col"],
+  #wrapper [class*="col"] {
+    display: block;
+    float: none;
+    width: 100%;
+    margin-left: 0;
+  }
+  .col12,
+  #wrapper .col12 {
+    width: 100%;
+  }
+}
+
+/* Custom sizes
+============================================================================================== */
+
+@media screen and (max-width: 400px) {
+  {
+    /* Helpers for windows phone 8 */
+  }
+  @-ms-viewport {
+    width: device-width;
+  }
+  @viewport {
+    width: device-width;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  {
+    /* Add your styles for devices with a maximum width of 480 */
+  
+  }
+}
+
+@media screen and (max-width: 768px) {
+  {
+    /* Add your styles for devices with a maximum width of 768 */
+  
+  }
+}
+
+@media screen and (max-width: 320px) {
+  {
+    /* Add your styles for devices with a maximum width of 320 */
+  
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  {
+    /* Add your styles for devices with a maximum width of 1024 */
+  
+  }
+}
+
+/* iPads (landscape) ----------- */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  {
+    /* Add your styles for devices with a maximum width of 1024 */
+  
+  }
+}
+
+/* iPads (portrait) ----------- */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  {
+    /* Add your styles for devices with a maximum width of 768 */
+  
+  }
+}
